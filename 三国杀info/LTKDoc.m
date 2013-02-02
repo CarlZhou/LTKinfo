@@ -19,6 +19,7 @@
         self.data = [[LTKData alloc] initWithTitle:title rating:rating];
         self.thumbImage = thumbImage;
         self.fullImage = fullImage;
+        self.info = [NSMutableDictionary dictionary];
     }
     return self;
 }
