@@ -40,6 +40,10 @@
 		8E50CF2C16B3A102008177EE /* 马超.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E50CF1316B3A102008177EE /* 马超.png */; };
 		8E50CF2D16B3A102008177EE /* 黄月英.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E50CF1416B3A102008177EE /* 黄月英.png */; };
 		8E50CF2E16B3A102008177EE /* 黄盖.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E50CF1516B3A102008177EE /* 黄盖.png */; };
+		8E8235AA16B767DD00DA77CA /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E8235A916B767DD00DA77CA /* about.png */; };
+		8E8235AD16B76A7B00DA77CA /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E8235AC16B76A7B00DA77CA /* bg1.png */; };
+		8E82365316B77D4B00DA77CA /* fullImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E82365216B77D4B00DA77CA /* fullImageViewController.m */; };
+		8E82365A16BA1B1B00DA77CA /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E82365916BA1B1B00DA77CA /* DataUtil.m */; };
 		8EBAC9E716AE3B110026FF68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBAC9E616AE3B110026FF68 /* UIKit.framework */; };
 		8EBAC9E916AE3B110026FF68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBAC9E816AE3B110026FF68 /* Foundation.framework */; };
 		8EBAC9EB16AE3B110026FF68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBAC9EA16AE3B110026FF68 /* CoreGraphics.framework */; };
@@ -106,6 +110,12 @@
 		8E50CF1316B3A102008177EE /* 马超.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "马超.png"; path = "fullImage/马超.png"; sourceTree = "<group>"; };
 		8E50CF1416B3A102008177EE /* 黄月英.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黄月英.png"; path = "fullImage/黄月英.png"; sourceTree = "<group>"; };
 		8E50CF1516B3A102008177EE /* 黄盖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "黄盖.png"; path = "fullImage/黄盖.png"; sourceTree = "<group>"; };
+		8E8235A916B767DD00DA77CA /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		8E8235AC16B76A7B00DA77CA /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		8E82365116B77D4B00DA77CA /* fullImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fullImageViewController.h; sourceTree = "<group>"; };
+		8E82365216B77D4B00DA77CA /* fullImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fullImageViewController.m; sourceTree = "<group>"; };
+		8E82365816BA1B1B00DA77CA /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		8E82365916BA1B1B00DA77CA /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 		8EBAC9E216AE3B110026FF68 /* 三国杀info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "三国杀info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBAC9E616AE3B110026FF68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8EBAC9E816AE3B110026FF68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +174,8 @@
 		8E50CEE816B395AE008177EE /* FullImages */ = {
 			isa = PBXGroup;
 			children = (
+				8E8235A916B767DD00DA77CA /* about.png */,
+				8E8235AC16B76A7B00DA77CA /* bg1.png */,
 				8E50CEFD16B3A102008177EE /* 关羽.png */,
 				8E50CEFE16B3A102008177EE /* 刘备.png */,
 				8E50CEFF16B3A102008177EE /* 华佗.png */,
@@ -236,6 +248,10 @@
 				8EBACA0716AE3B110026FF68 /* DetailViewController.h */,
 				8EBACA0816AE3B110026FF68 /* DetailViewController.m */,
 				8EBAC9ED16AE3B110026FF68 /* Supporting Files */,
+				8E82365116B77D4B00DA77CA /* fullImageViewController.h */,
+				8E82365216B77D4B00DA77CA /* fullImageViewController.m */,
+				8E82365816BA1B1B00DA77CA /* DataUtil.h */,
+				8E82365916BA1B1B00DA77CA /* DataUtil.m */,
 			);
 			path = "三国杀info";
 			sourceTree = "<group>";
@@ -411,6 +427,8 @@
 				8E50CF2C16B3A102008177EE /* 马超.png in Resources */,
 				8E50CF2D16B3A102008177EE /* 黄月英.png in Resources */,
 				8E50CF2E16B3A102008177EE /* 黄盖.png in Resources */,
+				8E8235AA16B767DD00DA77CA /* about.png in Resources */,
+				8E8235AD16B76A7B00DA77CA /* bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +469,8 @@
 				8EBACA0916AE3B110026FF68 /* DetailViewController.m in Sources */,
 				8EBACA3B16AE3BB40026FF68 /* LTKData.m in Sources */,
 				8EBACA3E16AE3CEF0026FF68 /* LTKDoc.m in Sources */,
+				8E82365316B77D4B00DA77CA /* fullImageViewController.m in Sources */,
+				8E82365A16BA1B1B00DA77CA /* DataUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

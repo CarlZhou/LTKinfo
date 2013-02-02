@@ -39,6 +39,11 @@
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     self.title = @"三国杀info";
+    
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg1.png"]];
+//    [tempImageView setFrame:self.tableView.frame];
+//    
+//    self.tableView.backgroundView = tempImageView;
 }
 
 - (void)viewWillAppear:(BOOL)animated

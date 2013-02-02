@@ -14,6 +14,7 @@
 @property (strong) LTKData *data;
 @property (strong) UIImage *thumbImage;
 @property (strong) UIImage *fullImage;
+@property (strong) NSMutableDictionary *info;
 
 - (id)initWithTitle:(NSString*)title rating:(float)rating thumbImage:(UIImage *)thumbImage fullImage:(UIImage *)fullImage;
 

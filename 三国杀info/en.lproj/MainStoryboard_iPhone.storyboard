@@ -68,59 +68,26 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="" title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="22">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da8-A8-nrl">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujP-xx-lkR">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="347" id="D0v-3R-AKh"/>
-                                            <constraint firstAttribute="width" constant="235" id="qMp-mN-TCC"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ujP-xx-lkR" firstAttribute="top" secondItem="Da8-A8-nrl" secondAttribute="top" constant="-11" id="4hk-f5-y8o"/>
-                                    <constraint firstAttribute="bottom" secondItem="ujP-xx-lkR" secondAttribute="bottom" constant="420" id="BgU-7t-jMj"/>
-                                    <constraint firstItem="ujP-xx-lkR" firstAttribute="leading" secondItem="Da8-A8-nrl" secondAttribute="leading" constant="-14" id="T6J-OY-LIB"/>
-                                    <constraint firstAttribute="trailing" secondItem="ujP-xx-lkR" secondAttribute="trailing" constant="99" id="wlg-io-wOy"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Da8-A8-nrl" secondAttribute="bottom" constant="-252" id="0Xd-jt-CJ1"/>
-                            <constraint firstItem="Da8-A8-nrl" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="cE1-yX-f8g"/>
-                            <constraint firstItem="Da8-A8-nrl" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="gsb-1J-5MD"/>
-                            <constraint firstItem="Da8-A8-nrl" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="nFg-V2-Eqm"/>
-                        </constraints>
-                    </view>
                     <navigationItem key="navigationItem" title="Detail" id="26"/>
-                    <connections>
-                        <outlet property="fullImage" destination="ujP-xx-lkR" id="gZT-dE-MdY"/>
-                        <outlet property="scrollView" destination="Da8-A8-nrl" id="my4-3L-oe4"/>
-                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="902" y="64"/>
+            <point key="canvasLocation" x="1072" y="-970"/>
         </scene>
     </scenes>
     <classes>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="test:"/>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="fullImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="fullImageClicked" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="MasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
