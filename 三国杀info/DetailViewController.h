@@ -10,12 +10,19 @@
 
 @class LTKDoc;
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UIScrollViewDelegate, UITextViewDelegate>
+{
+    UIScrollView *scrollView;
+    UIImageView *imageView;
+    UITextView *textView;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (strong, nonatomic) LTKDoc * detailItem;
-@property (strong, nonatomic) IBOutlet UIImageView *fullImage;
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UITextView *textView;
 
 @end
